@@ -66,7 +66,7 @@ const ServiceSlider = () => {
       }}
       modules={[FreeMode, Pagination]}
       freeMode
-      className="h-60 sm:h-85"
+      className="h-[280px] sm:h-[400px] pb-8"
     >
       {serviceData.map((item, i) => (
         <SwiperSlide key={i}>

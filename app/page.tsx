@@ -9,9 +9,9 @@ import { fadeIn } from "@/variants";
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-full">
+    <div className="bg-primary/60 h-full overflow-hidden relative">
       <div className="w-full h-full bg-linear-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
+        <div className="text-center flex flex-col justify-center lg:pt-32 lg:text-left h-full container mx-auto relative z-10">
           <motion.h1
             variants={fadeIn("down", 0.2)}
             initial="hidden"
@@ -28,7 +28,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="max-w-sm lg:max-w-xl mx-auto lg:mx-0 mb-10 lg:mb-16"
           >
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate,
             exercitationem harum, quia nulla temporibus deleniti libero veniam
@@ -36,7 +36,7 @@ const Home = () => {
             quod laudantium debitis.
           </motion.p>
 
-          <div className="flex justify-center xl:hidden relative">
+          <div className="flex justify-center lg:hidden relative">
             <ProjectsBtn />
           </div>
           <motion.div
@@ -44,16 +44,16 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden xl:flex"
+            className="hidden lg:flex"
           >
             <ProjectsBtn />
           </motion.div>
         </div>
       </div>
-      <div className="w-7xl h-full absolute right-0 bottom-0 pointer-events-none">
+      <div className="w-full max-w-7xl h-full absolute right-0 bottom-0 pointer-events-none">
         <div
           role="img"
-          className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
+          className="bg-none lg:bg-explosion lg:bg-cover lg:bg-right lg:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
           aria-hidden
         />
 
@@ -61,11 +61,11 @@ const Home = () => {
 
         <motion.div
           variants={fadeIn("up", 0.5)}
-          initial="hidden"
+          initial={{ opacity: 1, y: 0 }}
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-184.25 max-h-169.5 absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
+          className="w-full h-full max-w-[620px] max-h-[88%] absolute bottom-0 right-0 lg:right-[2%] z-20"
         >
           <Avatar />
         </motion.div>

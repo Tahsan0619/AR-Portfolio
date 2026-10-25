@@ -105,7 +105,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="h-full bg-primary/30 py-24 xl:py-28 overflow-y-auto text-center xl:text-left">
       <Circles />
 
       <motion.div

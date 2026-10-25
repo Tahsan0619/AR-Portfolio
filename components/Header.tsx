@@ -11,7 +11,7 @@ const Header = () => {
           <Link prefetch href="/">
             <Image
               src="/logo.svg"
-              alt="logo"
+              alt="Alex Rivera"
               width={220}
               height={48}
               priority

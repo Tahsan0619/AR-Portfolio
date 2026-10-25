@@ -15,9 +15,9 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Ethan Smith | Portfolio",
+  title: "Alex Rivera | Portfolio",
   description:
-    "Ethan Smith is a Full-stack web developer with 10+ years of experience.",
+    "Alex Rivera is a Full-stack web developer with 10+ years of experience.",
   keywords: [
     "react",
     "next",
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     "3d-website",
     "particle-effect",
   ],
-  authors: [{ name: "Sanidhya Kumar Verma" }],
+  authors: [{ name: "Alex Rivera" }],
   other: {
-    "theme-color": "#f13024",
+    "theme-color": "#F59E0B",
   },
 };
 
@@ -47,9 +47,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
+    <html lang="en" className="h-full overflow-hidden">
       <body
-        className={`${sora.variable} font-sora page bg-site text-white bg-cover bg-no-repeat relative`}
+        className={`${sora.variable} font-sora page bg-primary bg-site text-white bg-cover bg-center bg-no-repeat relative h-dvh min-h-dvh overflow-hidden`}
       >
         <TopLeftImg />
         <Nav />

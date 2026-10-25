@@ -38,3 +38,13 @@ next-env.d.ts
 
 # Local Netlify folder
 .netlify
+
+node_modules/
+
+vendor/
+
+dist/
+
+build/
+
+*.log

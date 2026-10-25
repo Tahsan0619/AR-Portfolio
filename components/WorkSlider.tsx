@@ -71,22 +71,23 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-70 sm:h-120"
+      className="h-[280px] sm:h-[420px] xl:h-[480px] pb-8"
     >
       {workSlides.slides.map((slide, i) => (
         <SwiperSlide key={i}>
-          <div className="grid grid-cols-2 grid-rows-2 gap-4">
+          <div className="grid grid-cols-2 grid-rows-2 gap-3 sm:gap-4 h-full">
             {slide.images.map((image, imageI) => (
               <div
-                className="relative rounded-lg overflow-hidden flex items-center justify-center group"
+                className="relative rounded-lg overflow-hidden flex items-center justify-center group min-h-0 bg-white/5"
                 key={imageI}
               >
-                <div className="flex items-center justify-center relative overflow-hidden group">
+                <div className="flex items-center justify-center relative overflow-hidden group size-full">
                   <Image
                     src={image.path}
                     alt={image.title}
                     width={500}
                     height={300}
+                    className="object-cover size-full"
                   />
 
                   <div
@@ -94,7 +95,7 @@ const WorkSlider = () => {
                     aria-hidden
                   />
 
-                  <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
+                  <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-6 sm:group-hover:-translate-y-10 group-hover:xl:-translate-y-16 transition-all duration-300">
                     <Link
                       href={image.link}
                       target="_blank"

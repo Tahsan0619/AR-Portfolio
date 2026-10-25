@@ -11,6 +11,7 @@ const Transition = () => {
     animate: {
       x: "0%",
       width: "0%",
+      opacity: 0,
     },
     exit: {
       x: ["0%", "100%"],
@@ -22,7 +23,7 @@ const Transition = () => {
     <>
       <motion.div
         role="status"
-        className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#2e2257]"
+        className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#0B1220] pointer-events-none"
         variants={transitionVariants}
         initial="initial"
         animate="animate"
@@ -32,7 +33,7 @@ const Transition = () => {
       />
       <motion.div
         role="status"
-        className="fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-[#3b2d71]"
+        className="fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-[#121A2A] pointer-events-none"
         variants={transitionVariants}
         initial="initial"
         animate="animate"
@@ -42,7 +43,7 @@ const Transition = () => {
       />
       <motion.div
         role="status"
-        className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-[#4b3792]"
+        className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-[#1A2332] pointer-events-none"
         variants={transitionVariants}
         initial="initial"
         animate="animate"
